@@ -4,6 +4,10 @@ import Image from 'next/image';
 import heroBackground from '@/public/hero_bg.png';
 import { Wordmark } from '@/components/assets';
 
+export const metadata = {
+  title: 'Home',
+};
+
 export default function Home() {
   return (
     <main className="relative isolate">
