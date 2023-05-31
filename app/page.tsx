@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import heroBackground from '@/public/hero_bg.png';
 import { Wordmark } from '@/components/assets';
