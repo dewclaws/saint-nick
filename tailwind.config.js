@@ -9,8 +9,9 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          primary: '#6ECBEC',
-          secondary: '#1F2B3B',
+          blue: '#6ECBEC',
+          navy: '#1F2B3B',
+          gray: '#30302F',
         },
       },
       boxShadow: {

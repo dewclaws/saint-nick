@@ -1,15 +1,15 @@
 'use client';
 
-import { Logo } from '@/components/assets';
+import { Logo } from '@/components';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useState } from 'react';
 import { clsx } from 'clsx';
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
+import { useState } from 'react';
 
 const routes = [
-  { name: 'Discography', link: '#' },
+  { name: 'Discography', link: '/discography' },
   { name: 'About', link: '#' },
   { name: 'Contact', link: '#' },
 ];
@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-10">
       <nav className={navbarClasses}>
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Saint Nick</span>
             <Logo className="h-10 w-auto" />
           </a>
@@ -77,10 +77,10 @@ export default function Navbar() {
                 initial={{ transform: 'translateX(100%)' }}
                 animate={{ transform: 'translateX(0%)' }}
                 exit={{ transform: 'translateX(100%)' }}
-                className="fixed inset-y-0 -right-0 z-30 w-full overflow-y-auto bg-brand-secondary text-white p-6 sm:max-w-sm"
+                className="fixed inset-y-0 -right-0 z-30 w-full overflow-y-auto bg-brand-navy text-white p-6 sm:max-w-sm"
               >
                 <div className="flex items-center justify-between">
-                  <a href="#" className="-m-1.5 p-1.5">
+                  <a href="/" className="-m-1.5 p-1.5">
                     <span className="sr-only">Saint Nick</span>
                     <Logo className="h-10 w-auto" />
                   </a>

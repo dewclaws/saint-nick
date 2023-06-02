@@ -1,3 +1,6 @@
-import SpotifyEmbed from './misc/SpotifyEmbed';
+import Logo from './assets/Logo';
+import Wordmark from './assets/Wordmark';
+import TrackList from './discography/TrackList';
+import Navbar from './layout/Navbar';
 
-export { SpotifyEmbed };
+export { Logo, Wordmark, TrackList, Navbar };

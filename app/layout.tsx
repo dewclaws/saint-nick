@@ -1,4 +1,4 @@
-import { Navbar } from '@/components/layout';
+import { Navbar } from '@/components';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 
@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bodyFont.className}>
-        <div className="bg-black text-white">
+        <div className="bg-black text-white h-full">
           <Navbar />
-          {children}
+          <main className="pt-24 px-11 relative isolate">{children}</main>
         </div>
       </body>
     </html>
