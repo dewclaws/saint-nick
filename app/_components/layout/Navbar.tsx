@@ -1,7 +1,7 @@
 'use client';
 
-import { Logo } from '@/components';
-import { useScrollPosition } from '@/hooks/useScrollPosition';
+import { Logo } from '@/app/_components';
+import { useScrollPosition } from '@/app/_hooks/useScrollPosition';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { clsx } from 'clsx';

@@ -2,6 +2,7 @@ export interface Track {
   name: string;
   artists: string;
   releaseDate: string;
+  url: string;
   cover: {
     url: string;
     width: string;
@@ -21,6 +22,7 @@ async function getTrackInfo(ids: string[]): Promise<Track[]> {
     name: track.name,
     artists: track.artists.map((artist: any) => artist.name).join(', '),
     releaseDate: track.album.release_date,
+    url: track.external_urls.spotify,
     cover: {
       url: track.album.images[0].url,
       width: track.album.images[0].width,

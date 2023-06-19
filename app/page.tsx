@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import { Wordmark } from '@/app/_components';
 import heroBackground from '@/public/hero_bg.png';
-import { Wordmark } from '@/components';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Home',

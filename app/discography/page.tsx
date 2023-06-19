@@ -1,5 +1,5 @@
-import { TrackList } from '@/components';
-import { useSpotifyAPI } from '@/hooks/useSpotifyAPI';
+import { TrackList } from '@/app/_components';
+import { useSpotifyAPI } from '@/app/_hooks/useSpotifyAPI';
 
 export default async function Discography() {
   const { getTrackInfo } = useSpotifyAPI();

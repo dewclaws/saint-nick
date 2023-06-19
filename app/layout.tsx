@@ -1,4 +1,4 @@
-import { Navbar } from '@/components';
+import { Navbar } from '@/app/_components';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 

@@ -1,4 +1,4 @@
-import { Track } from '@/hooks/useSpotifyAPI';
+import { Track } from '@/app/_hooks/useSpotifyAPI';
 import clsx from 'clsx';
 import Image from 'next/image';
 
